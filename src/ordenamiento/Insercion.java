@@ -7,7 +7,7 @@ public class Insercion {
 		int actual;
 		for (int i = 0; i < array.length; i++) {
 			aux = array[i];
-			for (actual = i; actual > 0 && array[i - 1] > aux; actual--) {
+			for (actual = i; actual > 0 && array[actual - 1] > aux; actual--) {
 				array[actual] = array[actual - 1];
 			}
 			array[actual] = aux;
